@@ -3,16 +3,49 @@ body {
     padding: 0;
     color: white;
     font-family: 'Lato'; 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .bg {
     background: linear-gradient(180deg, rgb(70.13, 99.71, 255) 42.71%, rgba(0, 38.93, 243.31, 0.17)100%); 
     width: 100vw;
-    height: 2556px;
-    overflow: hidden;
-    position: fixed;
+    height: 110vh;
+    /* overflow: hidden; */
+    position: absolute;
 }
+
+.menuBar1 {
+width: 28px;
+position: absolute;
+height: 4px;
+border-radius: 7px;
+background: #FFFFFF;
+top: 3vh;
+left: 5vh;
+cursor: pointer;
+}
+
+.menuBar2 {
+width: 28px;
+position: absolute;
+height: 4px;
+border-radius: 7px;
+background: #FFFFFF;
+top: 4vh;
+left: 5vh;
+cursor: pointer;
+}
+
+.menuBar3 {
+    width: 28px;
+    position: absolute;
+    height: 4px;
+    border-radius: 7px;
+    background: #FFFFFF;
+    top: 5vh;
+    left: 5vh;
+    cursor: pointer;
+    }
 
 .sun {
     position: absolute;
@@ -56,6 +89,18 @@ body {
     right: 5vh;
     font-size: large;
     text-shadow: 0px 4px 4px #00000040;
+    
+    color: white;
+}
+#NextDays a {
+    text-decoration: none; 
+}
+
+#NextDays a:hover, 
+#NextDays a:visited, 
+#NextDays a:focus, 
+#NextDays a:active {
+    color: white;
 }
 
 .Module1 {
@@ -196,7 +241,8 @@ ul {
 
 
 #SunTime {
-    width: 20vh;
+    position: relative;
+    width: 60vh;
     height: auto;
 }
 
