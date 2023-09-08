@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Prototype</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+
+<body>
+<div class="bg">
+    <span class="sun"></span>
+    <div id="loc">
+        Philadelphia,<br>
+        United States
+    </div>
+    <div id="tem">
+        29°
+    </div>
+    <div id="CurDate">
+        Sep 5, Tue
+    </div>
+    <div id="NextDays">
+        Next 7 days
+    </div>
+
+    <div class="table-container">
+        <table>
+            <!-- You can replicate the pattern for 24 groups. For brevity, I'll show a smaller number -->
+            <tr>
+                <td>Now</td>
+                <td>11am</td>
+                <td>12pm</td>
+                <td>1pm</td>
+                <td>2pm</td>
+                <!-- ... -->
+            </tr>
+            <tr>
+                <td><img src="images/sunny.png" alt="Current Weather"></td>
+                <td><img src="images/sunny.png" alt="11am Weather"></td>
+                <td><img src="images/sunny.png" alt="12pm Weather"></td>
+                <td><img src="images/cloudy.png" alt="1pm Weather"></td>
+                <td><img src="images/raining.png" alt="2pm Weather"></td>
+                <!-- ... -->
+            </tr>
+            <tr>
+                <td>29°</td>
+                <td>29°</td>
+                <td>30°</td>
+                <td>31°</td>
+                <td>28°</td>
+                <!-- ... -->
+            </tr>
+        </table>
+    </div>
+
+    <div class="Module2">
+        Reminder
+        Rain is expected today at 2:00 PM.
+        Don’t forget your umbrella!
+    </div>
+
+    <div class="Module3">
+        Feels like 32°
+        Precipitation 0.15 - Rain
+        Air Quality 62 - Moderate
+        UV Index 3 - Moderate
+        Wind 4 mph, South
+        Humidity 69%
+    </div>
+
+    <div class="Module4">
+        6:32 am
+        10:16 am
+        7:26 am
+        Sunrise / Sunset
+    </div>
+
+    <div class="cloud"></div>
+</div>
+</body>
+</html>

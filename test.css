@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px; /* You can adjust this if needed */
+}
+
+td {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    width: 20%; /* Since there are 5 columns, each column will take 20% of the width */
+}
+
+tr:nth-child(1) td {
+    padding-bottom: 20px; /* Distance between first and second row */
+}
+
+tr:nth-child(2) td {
+    padding-top: 20px;
+    padding-bottom: 5px; /* Distance between second and third row */
+}
+
+tr:nth-child(3) td {
+    padding-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
