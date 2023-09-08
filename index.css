@@ -9,8 +9,9 @@ body {
 .bg {
     background: linear-gradient(180deg, rgb(70.13, 99.71, 255) 42.71%, rgba(0, 38.93, 243.31, 0.17)100%); 
     width: 100vw;
-    height: 100vh;
+    height: 2556px;
     overflow: hidden;
+    position: fixed;
 }
 
 .sun {
@@ -29,6 +30,7 @@ body {
     left: 5vh;
     font-size: 24px;
     font-weight:bolder;
+    text-shadow: 0px 4px 4px #00000040;
 }
 
 #tem {
@@ -37,6 +39,7 @@ body {
     right: 5vh;
     font-size: 60px;
     font-weight: bold;
+    text-shadow: 0px 4px 4px #00000040;
 }
 
 #CurDate {
@@ -44,6 +47,7 @@ body {
     top: 18vh;
     left: 5vh;
     font-size: large;
+    text-shadow: 0px 4px 4px #00000040;
 }
 
 #NextDays {
@@ -51,6 +55,7 @@ body {
     top: 18vh;
     right: 5vh;
     font-size: large;
+    text-shadow: 0px 4px 4px #00000040;
 }
 
 .Module1 {
@@ -63,6 +68,7 @@ body {
     scrollbar-width: none;
     background-color: rgba(255, 255, 255, 0.345);
     border-radius: 18px;
+    box-shadow: inset 0px -6px 8px #41414140, 0px, 4px, 4px #00000040;
 }
 
 .Module1::-webkit-scrollbar {
