@@ -3,12 +3,14 @@ body {
     padding: 0;
     color: white;
     font-family: 'Lato'; 
+    overflow: hidden;
 }
 
 .bg {
     background: linear-gradient(180deg, rgb(70.13, 99.71, 255) 42.71%, rgba(0, 38.93, 243.31, 0.17)100%); 
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .sun {
@@ -26,6 +28,7 @@ body {
     top: 8vh;
     left: 5vh;
     font-size: 24px;
+    font-weight:bolder;
 }
 
 #tem {
@@ -33,26 +36,28 @@ body {
     top: 8vh;
     right: 5vh;
     font-size: 60px;
+    font-weight: bold;
 }
 
 #CurDate {
     position: absolute;
     top: 18vh;
     left: 5vh;
+    font-size: large;
 }
 
 #NextDays {
     position: absolute;
     top: 18vh;
     right: 5vh;
+    font-size: large;
 }
 
-.table-container {
+.Module1 {
     position: absolute;
-    
     top: 21vh;
     right: 5vh;
-    left: 5vh; /* to balance the left and right margin/padding */
+    left: 5vh;
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -60,7 +65,7 @@ body {
     border-radius: 18px;
 }
 
-.table-container::-webkit-scrollbar {
+.Module1::-webkit-scrollbar {
     display: none; 
 }
 
@@ -95,14 +100,14 @@ tr:nth-child(3) td {
 img {
     max-width:40%;
     height: auto;
-    position: static; /* to overwrite the absolute position defined in your original CSS */
+    position: static;
 }
 
 .Module2 {
     position: absolute;
-    top: 38vh;
+    top: 40vh;
     right: 5vh;
-    left: 5vh; /* to balance the left and right margin/padding */
+    left: 5vh; 
     background-color: rgba(255, 255, 255, 0.355);
     border-radius: 18px;
     padding-left: 18px;
@@ -111,41 +116,40 @@ img {
 }
 
 #TitlenMark {
-    display: flex;       /* Make the container a flex container */
-    align-items: center; /* Center items vertically */
+    display: flex;       
+    align-items: center;
 
 }
 
 #Emphasize {
-    /* Styles for the "!" can be adjusted here, for example */
     font-size: 24px;
-    /* margin-right: 10px;  */
     font-size: 30px;
-    color: #8964e6; /* Some spacing between "!" and "Reminder" */
+    color: #8964e6; 
     font-weight: bold;
+    padding-left: 15px;
 }
 
 #Etitle {
-    /* Styles specific for the "Reminder" title can be added here */
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: larger;
     font-weight: bold;
 }
 
 #RemindContent {
-    align-self: flex-start;  /* Align this to the start of its container */
-    margin-left: 10px;       /* Same margin-left as the #Emphasize to align it with the #Etitle */
-    padding-left: 10px;
+    align-self: flex-start; 
+    margin-left: 10px;
+    padding-left:30px;
 }
 
 .Module3 {
     position: absolute;
-    top: 51.5vh;
+    top: 56vh;
     right: 5vh;
     left: 5vh; 
     background-color: rgba(255, 255, 255, 0.355);
     border-radius: 18px;
     padding-left: 18px;
+    padding-right: 58px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
@@ -154,14 +158,24 @@ ul {
     list-style-type:none;
 }
 
-li span {
-    display:inline-block;
-    width:150px;
+.Module3 li {
+    display: flex;
+    justify-content: space-between;
 }
+
+.Module3 li span:first-child {
+    width: 50%;
+}
+
+.Module3 li span:last-child {
+    width: 45%;
+    text-align: right;
+}
+
 
 .Module4 {
     position: absolute;
-    top: 76vh;
+    top: 83vh;
     right: 5vh;
     left: 5vh; 
     background-color: rgba(255, 255, 255, 0.355);
@@ -169,28 +183,28 @@ li span {
     padding-left: 18px;
     padding-bottom: 15px;
     padding-top: 15px;
-    display: flex;       /* Convert to flex container */
-    align-items: flex-end; /* Align items to the bottom */
+    display: flex;
+    align-items: flex-end;
     justify-content: center; 
 }
 
 
 #SunTime {
-    width: 200%;       /* Adjust this to your preferred size */
-    height: auto;     /* This will maintain the image's aspect ratio */
-    margin: 0 20px;   /* Adding some spacing between the image and the times */
+    width: 20vh;
+    height: auto;
 }
 
 
 
-.Module4 > span:nth-child(2) { /* targeting 6:32 am */
-    order: 1; /* this ensures it's to the left */
+.Module4 > span:nth-child(2) {
+    order: 1;
 }
 
-.Module4 > span:nth-child(3) { /* targeting 7:26 am */
-    order: 3; /* this ensures it's to the right */
+.Module4 > span:nth-child(3) {
+    order: 3;
 }
 
-#SunTime {
-    order: 2; /* this ensures the image stays in the middle */
-}
+/* #SunTime {
+    order: 2;
+} */
+
