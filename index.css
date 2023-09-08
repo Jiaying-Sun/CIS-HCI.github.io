@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Lato';
+    font-family: 'Lato'; 
 }
 
 .bg {
@@ -49,10 +49,19 @@ body {
 
 .table-container {
     position: absolute;
+    
     top: 21vh;
     right: 5vh;
     left: 5vh; /* to balance the left and right margin/padding */
     overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: rgba(255, 255, 255, 0.345);
+    border-radius: 18px;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none; 
 }
 
 table {
@@ -61,46 +70,127 @@ table {
 }
 
 td {
-    border: 1px solid #e0e0e0;
+    border: none;
     text-align: center;
     vertical-align: middle;
-    padding: 10px;
+    padding: 1px;
     min-width: 20vw;
 }
 
 tr:nth-child(1) td {
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 tr:nth-child(2) td {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
 
 tr:nth-child(3) td {
-    padding-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 15px;
 }
 
 img {
-    max-width: 100%;
+    max-width:40%;
     height: auto;
     position: static; /* to overwrite the absolute position defined in your original CSS */
 }
 
 .Module2 {
     position: absolute;
-    top: 60vh;
-    left: 5vh;
+    top: 38vh;
+    right: 5vh;
+    left: 5vh; /* to balance the left and right margin/padding */
+    background-color: rgba(255, 255, 255, 0.355);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#TitlenMark {
+    display: flex;       /* Make the container a flex container */
+    align-items: center; /* Center items vertically */
+
+}
+
+#Emphasize {
+    /* Styles for the "!" can be adjusted here, for example */
+    font-size: 24px;
+    /* margin-right: 10px;  */
+    font-size: 30px;
+    color: #8964e6; /* Some spacing between "!" and "Reminder" */
+    font-weight: bold;
+}
+
+#Etitle {
+    /* Styles specific for the "Reminder" title can be added here */
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#RemindContent {
+    align-self: flex-start;  /* Align this to the start of its container */
+    margin-left: 10px;       /* Same margin-left as the #Emphasize to align it with the #Etitle */
+    padding-left: 10px;
 }
 
 .Module3 {
     position: absolute;
-    top: 60vh;
+    top: 51.5vh;
     right: 5vh;
+    left: 5vh; 
+    background-color: rgba(255, 255, 255, 0.355);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+ul {
+    list-style-type:none;
+}
+
+li span {
+    display:inline-block;
+    width:150px;
 }
 
 .Module4 {
     position: absolute;
-    top: 75vh;
-    left: 5vh;
+    top: 76vh;
+    right: 5vh;
+    left: 5vh; 
+    background-color: rgba(255, 255, 255, 0.355);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;       /* Convert to flex container */
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: center; 
+}
+
+
+#SunTime {
+    width: 200%;       /* Adjust this to your preferred size */
+    height: auto;     /* This will maintain the image's aspect ratio */
+    margin: 0 20px;   /* Adding some spacing between the image and the times */
+}
+
+
+
+.Module4 > span:nth-child(2) { /* targeting 6:32 am */
+    order: 1; /* this ensures it's to the left */
+}
+
+.Module4 > span:nth-child(3) { /* targeting 7:26 am */
+    order: 3; /* this ensures it's to the right */
+}
+
+#SunTime {
+    order: 2; /* this ensures the image stays in the middle */
 }
